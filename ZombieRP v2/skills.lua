@@ -65,4 +65,51 @@ func = function(ply)
   end
 }
 
+SKILLTREE.Config.Skills[6] = {
+Name = "Stamina Training I",
+Type = "spawn",
+Desc = "You have completed your first stamina training. (+5% running speed)",
+MaxRank = 1,
+Parent = 5,
+x = 620,
+y = 400,
+func = function(ply) 
+  local run = ply:GetRunSpeed()
+  local runmath = run / 100 * 5
+  local newrun = run + runmath
+  ply:SetRunSpeed(newrun)
+  end
+}
+
+SKILLTREE.Config.Skills[7] = {
+Name = "Stamina Training II",
+Type = "spawn",
+Desc = "You have completed your second stamina training. (+12% running speed)",
+MaxRank = 1,
+Parent = 6,
+x = 720,
+y = 400,
+func = function(ply) 
+  local run = ply:GetRunSpeed()
+  local runmath = run / 100 * 12
+  local newrun = run + runmath
+  ply:SetRunSpeed(newrun)
+  end
+}
+
+SKILLTREE.Config.Skills[8] = {
+Name = "Stamina Training III",
+Type = "spawn",
+Desc = "You have completed your third stamina training. (+15% running speed)",
+MaxRank = 1,
+Parent = 7,
+x = 820,
+y = 400,
+func = function(ply) 
+  local run = ply:GetRunSpeed()
+  local runmath = run / 100 * 15
+  local newrun = run + runmath
+  ply:SetRunSpeed(newrun)
+  end
+}
 print("SkillTree Config Loaded")
