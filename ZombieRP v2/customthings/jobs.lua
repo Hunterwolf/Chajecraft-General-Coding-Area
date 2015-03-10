@@ -807,7 +807,7 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 //Bandit Surgeon
 TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	color = Color(75, 75, 75, 255),
-	model = "models/player/phoenix.mdl",
+	model = "models/stalkertnb/bandit4.mdl",
 	description = [[Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
 	weapons = {"cw_g4p_usp40","fas2_ifak"},
 	command = "banditmedic",
